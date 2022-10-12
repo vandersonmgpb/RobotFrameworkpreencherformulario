@@ -15,13 +15,9 @@ abrir navegador e acessar site
 
 preencher campos
     Input Text    ${input_name}    Jose Silva
-    Sleep    1s
     Input Text    ${input_phone}    999999999
-    Sleep    1s
     Input Text    ${input_email}    josesilva@email.com
-    Sleep    1s
     Input Text    ${input_password}    02356
-    Sleep    1s
     Input Text    ${textarea_address}    rua endereco de tal
 
 clicar em submit
