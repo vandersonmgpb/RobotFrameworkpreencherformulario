@@ -1,83 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221012 10:11:16.830" rpa="false" schemaversion="3">
-<suite id="s1" name="automacaoFormulario" source="C:\CursoUdemy\AprendendoRobotFramework\AutomacaoRobotFramework\automacaoFormulario.robot">
-<test id="s1-t1" name="Cenario 1: preencher formulario" line="30">
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221012 15:54:23.004" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\CursoUdemy\AprendendoRobotFramework\AutomacaoRobotFramework\Tests">
+<suite id="s1-s1" name="automacaoFormulario" source="C:\CursoUdemy\AprendendoRobotFramework\AutomacaoRobotFramework\Tests\automacaoFormulario.robot">
+<test id="s1-s1-t1" name="Cenario 1: preencher formulario" line="30">
 <kw name="abrir navegador e acessar site">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://itera-qa.azurewebsites.net/home/automation</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221012 10:11:16.972" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
-<status status="PASS" starttime="20221012 10:11:16.972" endtime="20221012 10:11:20.538"/>
+<msg timestamp="20221012 15:54:23.172" level="INFO">Opening browser 'chrome' to base url 'https://itera-qa.azurewebsites.net/home/automation'.</msg>
+<status status="PASS" starttime="20221012 15:54:23.172" endtime="20221012 15:54:28.157"/>
 </kw>
-<status status="PASS" starttime="20221012 10:11:16.972" endtime="20221012 10:11:20.538"/>
+<status status="PASS" starttime="20221012 15:54:23.172" endtime="20221012 15:54:28.157"/>
 </kw>
 <kw name="preencher campos">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_name}</arg>
 <arg>Jose Silva</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 10:11:20.539" level="INFO">Typing text 'Jose Silva' into text field '//input[@aria-describedby='name']'.</msg>
-<status status="PASS" starttime="20221012 10:11:20.539" endtime="20221012 10:11:20.621"/>
+<msg timestamp="20221012 15:54:28.158" level="INFO">Typing text 'Jose Silva' into text field '//input[@aria-describedby='name']'.</msg>
+<status status="PASS" starttime="20221012 15:54:28.158" endtime="20221012 15:54:28.257"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_phone}</arg>
 <arg>999999999</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 10:11:20.621" level="INFO">Typing text '999999999' into text field '//input[contains(@aria-describedby,'phone')]'.</msg>
-<status status="PASS" starttime="20221012 10:11:20.621" endtime="20221012 10:11:20.688"/>
+<msg timestamp="20221012 15:54:28.258" level="INFO">Typing text '999999999' into text field '//input[contains(@aria-describedby,'phone')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:28.257" endtime="20221012 15:54:28.320"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_email}</arg>
 <arg>josesilva@email.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 10:11:20.688" level="INFO">Typing text 'josesilva@email.com' into text field '//input[contains(@type,'email')]'.</msg>
-<status status="PASS" starttime="20221012 10:11:20.688" endtime="20221012 10:11:20.768"/>
+<msg timestamp="20221012 15:54:28.320" level="INFO">Typing text 'josesilva@email.com' into text field '//input[contains(@type,'email')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:28.320" endtime="20221012 15:54:28.378"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${input_password}</arg>
 <arg>02356</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 10:11:20.768" level="INFO">Typing text '02356' into text field '//input[contains(@type,'password')]'.</msg>
-<status status="PASS" starttime="20221012 10:11:20.768" endtime="20221012 10:11:20.823"/>
+<msg timestamp="20221012 15:54:28.378" level="INFO">Typing text '02356' into text field '//input[contains(@type,'password')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:28.378" endtime="20221012 15:54:28.430"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${textarea_address}</arg>
 <arg>rua endereco de tal</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221012 10:11:20.823" level="INFO">Typing text 'rua endereco de tal' into text field '//textarea[contains(@class,'form-control')]'.</msg>
-<status status="PASS" starttime="20221012 10:11:20.823" endtime="20221012 10:11:20.883"/>
+<msg timestamp="20221012 15:54:28.430" level="INFO">Typing text 'rua endereco de tal' into text field '//textarea[contains(@class,'form-control')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:28.430" endtime="20221012 15:54:28.496"/>
 </kw>
-<status status="PASS" starttime="20221012 10:11:20.538" endtime="20221012 10:11:20.883"/>
+<status status="PASS" starttime="20221012 15:54:28.158" endtime="20221012 15:54:28.496"/>
 </kw>
 <kw name="clicar em submit">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${button_submit}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20221012 10:11:20.884" level="INFO">Clicking element '//button[@type='submit'][contains(.,'Submit')]'.</msg>
-<status status="PASS" starttime="20221012 10:11:20.884" endtime="20221012 10:11:20.919"/>
+<msg timestamp="20221012 15:54:28.497" level="INFO">Clicking element '//button[@type='submit'][contains(.,'Submit')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:28.497" endtime="20221012 15:54:28.529"/>
 </kw>
-<status status="PASS" starttime="20221012 10:11:20.883" endtime="20221012 10:11:20.920"/>
+<status status="PASS" starttime="20221012 15:54:28.496" endtime="20221012 15:54:28.529"/>
 </kw>
 <kw name="fechar nevegador">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20221012 10:11:20.920" endtime="20221012 10:11:23.092"/>
+<status status="PASS" starttime="20221012 15:54:28.531" endtime="20221012 15:54:30.651"/>
 </kw>
-<status status="PASS" starttime="20221012 10:11:20.920" endtime="20221012 10:11:23.092"/>
+<status status="PASS" starttime="20221012 15:54:28.530" endtime="20221012 15:54:30.651"/>
 </kw>
-<status status="PASS" starttime="20221012 10:11:16.971" endtime="20221012 10:11:23.093"/>
+<status status="PASS" starttime="20221012 15:54:23.171" endtime="20221012 15:54:30.653"/>
 </test>
-<status status="PASS" starttime="20221012 10:11:16.831" endtime="20221012 10:11:23.094"/>
+<status status="PASS" starttime="20221012 15:54:23.020" endtime="20221012 15:54:30.654"/>
+</suite>
+<suite id="s1-s2" name="Bdd" source="C:\CursoUdemy\AprendendoRobotFramework\AutomacaoRobotFramework\Tests\bdd.robot">
+<test id="s1-s2-t1" name="Cenario 1: Executar um video no site do youtube" line="35">
+<kw name="Dado que eu acesso o site do youtube">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 15:54:30.667" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<status status="PASS" starttime="20221012 15:54:30.666" endtime="20221012 15:54:40.568"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:30.666" endtime="20221012 15:54:40.569"/>
+</kw>
+<kw name="Quando digito o nome da musica">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${Input_Pesquisa}</arg>
+<arg>${NomedaMusica}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221012 15:54:40.571" level="INFO">Typing text 'Diego &amp; Victor Hugo, Bruno &amp; Marrone - Facas (Ao Vivo)' into text field '//input[contains(@autocapitalize,'none')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:40.570" endtime="20221012 15:54:40.716"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:40.570" endtime="20221012 15:54:40.716"/>
+</kw>
+<kw name="E clico no botao buscar">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Button_Pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 15:54:40.717" level="INFO">Clicking element '//button[@id="search-icon-legacy"]'.</msg>
+<status status="PASS" starttime="20221012 15:54:40.717" endtime="20221012 15:54:40.828"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:40.716" endtime="20221012 15:54:40.828"/>
+</kw>
+<kw name="E clico na primeira opcao da lista">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Primeiro}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221012 15:54:40.830" endtime="20221012 15:54:41.959"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Primeiro}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221012 15:54:41.960" level="INFO">Clicking element '//yt-formatted-string[@class='style-scope ytd-video-renderer'][contains(.,'Diego &amp; Victor Hugo, Bruno &amp; Marrone - Facas (Ao Vivo)')]'.</msg>
+<status status="PASS" starttime="20221012 15:54:41.960" endtime="20221012 15:54:42.067"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:40.829" endtime="20221012 15:54:42.067"/>
+</kw>
+<kw name="Entao o video e executado">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Prova}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20221012 15:54:42.069" endtime="20221012 15:54:43.104"/>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Prova}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20221012 15:54:43.145" level="INFO">Element '//yt-formatted-string[@class='style-scope ytd-button-renderer style-default size-default'][contains(.,'Compartilhar')]' is displayed.</msg>
+<status status="PASS" starttime="20221012 15:54:43.104" endtime="20221012 15:54:43.145"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 15:54:43.145" endtime="20221012 15:54:45.837"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:42.068" endtime="20221012 15:54:45.837"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:30.665" endtime="20221012 15:54:45.838"/>
+</test>
+<status status="PASS" starttime="20221012 15:54:30.656" endtime="20221012 15:54:45.839"/>
+</suite>
+<suite id="s1-s3" name="Estrutura" source="C:\CursoUdemy\AprendendoRobotFramework\AutomacaoRobotFramework\Tests\estrutura.robot">
+<test id="s1-s3-t1" name="Cenario 1: Teste de abrir site google" line="20">
+<kw name="abrir site da google">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com.br</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 15:54:45.848" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com.br'.</msg>
+<status status="PASS" starttime="20221012 15:54:45.847" endtime="20221012 15:54:50.351"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:45.847" endtime="20221012 15:54:50.352"/>
+</kw>
+<kw name="fechar navegador">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 15:54:50.352" endtime="20221012 15:54:52.488"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:50.352" endtime="20221012 15:54:52.489"/>
+</kw>
+<tag>regressivo</tag>
+<status status="PASS" starttime="20221012 15:54:45.846" endtime="20221012 15:54:52.490"/>
+</test>
+<test id="s1-s3-t2" name="Cenario 2: Teste de abrir site globo" line="25">
+<kw name="abrir site da globo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.globo.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221012 15:54:52.495" level="INFO">Opening browser 'chrome' to base url 'https://www.globo.com/'.</msg>
+<status status="PASS" starttime="20221012 15:54:52.495" endtime="20221012 15:55:03.904"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:52.494" endtime="20221012 15:55:03.904"/>
+</kw>
+<kw name="fechar navegador">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221012 15:55:03.905" endtime="20221012 15:55:06.097"/>
+</kw>
+<status status="PASS" starttime="20221012 15:55:03.905" endtime="20221012 15:55:06.097"/>
+</kw>
+<status status="PASS" starttime="20221012 15:54:52.493" endtime="20221012 15:55:06.098"/>
+</test>
+<status status="PASS" starttime="20221012 15:54:45.842" endtime="20221012 15:55:06.099"/>
+</suite>
+<status status="PASS" starttime="20221012 15:54:23.005" endtime="20221012 15:55:06.102"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">regressivo</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="automacaoFormulario">automacaoFormulario</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="automacaoFormulario">Tests.automacaoFormulario</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Bdd">Tests.Bdd</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s3" name="Estrutura">Tests.Estrutura</stat>
 </suite>
 </statistics>
 <errors>
